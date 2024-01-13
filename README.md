@@ -3,8 +3,8 @@ Documentação dos estudos de python (extraídos do livro "Python direto ao pont
 
 * Hello world
 
-'''python
+~~~python
 
 print("Hello world")
 
-'''
+~~~
