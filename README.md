@@ -8,3 +8,17 @@ Documentação dos estudos de python (extraídos do livro "Python direto ao pont
 print("Hello world")
 
 ~~~
+
+
+* Valores Inteiros
+
+~~~python
+2
+>>>2
+~~~
+
+* Valores flutuantes
+~~~python
+1.61
+>>>1.61
+~~~
