@@ -73,4 +73,14 @@ Uma variável em Python é um nome que aponta para um valor. A instrução de da
   pois o Python difere maiúsculas de minúsculas, é CASE SENSITIVE, para o interpretador
   "distancia" e "Distancia" são duas variáveis diferentes.  
 
+* Nome das variáveis
+
+  Válido | Inválido | Por quê é inválido?
+  -------|----------|--------------------
+  minha_string | minha-string | Hifens não são permitidos
+  int4 | 4int | Não pode começar com número
+  MINHA_CONST | $MINHA_CONST | Não pode usar símbolos diferentes de underline "_"
+  largura_real | largura real | Não pode haver espaços
+  
+
   
