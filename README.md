@@ -127,11 +127,14 @@ Floor Division //, o qual remove o valor decimal da divisão:
 
   Os operadores também podem ser usados com __strings__, ao somar duas __strings__
 temos como resultado a união delas, chamada de concatenação.
+
 ~~~python
 >>> "Python"+"Rocks"
 PythonRocks
 ~~~
+  
   Vejamos o que acontece ao somar uma __string__ com um inteiro.
+
 ~~~python
 >>> "Python"+3
 Traceback (most recent call last):
@@ -139,13 +142,16 @@ Traceback (most recent call last):
     "Python"+3
 TypeError: must be str, not int
 ~~~
+
 Obtemos um erro, pois apenas podemos somar **string** com **string**, e números com
 números. Assim, para unir um número a uma **string** precisamos, antes, converter o 
 número em uma **string** com a função **str**:
+
 ~~~python
 >>>"Python"+str(3)
 Python3
 ~~~
+
 Da mesma forma, para obtermos uma soma númerica, não podemos utilizar diretamente
 uma **string**, é necessário, antes, convertê-la em um tipo númerico. Essa conversão
 de tipos é chamada _casting_. Para converter uma **string** para um inteiro utilizamos
@@ -155,4 +161,28 @@ a função **int** e para um **float** a função **float**.
 42
 >>> float('2.5')+3
 5.5
+~~~
+
+* Comentários
+
+Os comentários são anotações inseridas no código para o próprio programador e são
+ignorados pelor interpretador. São importantes para explicar para si mesmo e para os
+outros o que determinado bloco de código faz.
+O # é utilizado para comentar o conteúdo de uma linha.
+Para comentar várias linhas pode-se utilizar as aspas triplas no início e no fim do comentário.
+Abaixo apresento um código de cálculo de áreas com comentários elucidativos:
+
+~~~python
+# Cálculo da área de um círculo
+raio = 4
+pi = 3.14
+print("área do círculo "+str(pi*raio**2))
+
+""" Cálculo da área de um retângulo"""
+base = 2
+largura = 3
+print("área do retângulo "+str(base*largura))
+
+área do círculo 50.24
+área do retângulo 6
 ~~~
