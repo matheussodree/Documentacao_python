@@ -81,6 +81,18 @@ Uma variável em Python é um nome que aponta para um valor. A instrução de da
   int4 | 4int | Não pode começar com número
   MINHA_CONST | $MINHA_CONST | Não pode usar símbolos diferentes de underline "_"
   largura_real | largura real | Não pode haver espaços
-  
+
+PS: também não podem ser dados nomes que a linguagem Python utiliza na sua sintaxe,
+as chamadas palavras reservadas abaixo:
+~~~python
+and        del      from    not     while    
+as         elif     global  or      with
+assert     else     if      pass    yield
+break      except   import  print
+class      exec     in      raise
+continue   finally  is      return
+def        for      lambda  try
+~~~
+
 
   
