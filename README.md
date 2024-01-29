@@ -1,5 +1,5 @@
 # Documentacao_python
-Documentação dos estudos de python (extraídos do livro "Python direto ao ponto" do Estevão Fonseca)
+Documentação dos estudos de python
 
 ### Conceitos importantes:
 
@@ -207,3 +207,83 @@ dizendo quantos caracteres a **string** contém, veja:
 >>> len('Hello')
 5
 ~~~
+
+### Expressões condicionais
+
+* Expressões booleanas
+
+Para realizar decisões é necessário que antes saibamos comparar valores. As espressões booleanas
+nos permitem fazer essa comparação e obter como resultado __True__ ou __False__
+~~~python
+>>> # Comparação de igualdade
+>>> 3==3
+True
+>>> 3==4
+False
+
+>>> # Comparação de desigualdade
+>>> 5!=5
+False
+>>> 5!=6
+True
+
+>>> # Comparação de maior que
+>>> 5>2
+True
+~~~
+Em resumo os operadores relacionais são:
+Comparações | Significado
+------------|------------
+x == y | x igual a y
+x != y | x diferente de y
+x > y | x maior que y
+x < y | x menor que y
+x >= y | x maior ou igual a y
+x <= y | x menor ou igual a y
+
+* Intrução If
+
+O __if__ é a forma mais elementar de avaliação. 
+A expressão é avaliada pelo interpretador: se ela for verdadeira, 
+o bloco interno ao **if** é executado, se não for verdadeira não é executado 
+e nada seria impresso
+~~~python
+>>> nota = 8
+>>> if nota => 7:
+      print("Você passou")
+Você passou
+~~~
+Em português a instrução seria: 
+```
+Se Verdadeiro:
+  Comandos
+```
+* Indentação
+
+O espaçamento à esquerda, logo abaixo da declaração __if__, não é apenas estético,
+o Python utiliza os espaçamentos para delimitar os blocos de código, ou seja, é esse
+espaçamento que expresssa que o __print__ está dentro do __if__. Em Python por convenção,
+são utilizados quatro espaços para cada nível de bloco. Essa delimitação por espaços é chamada
+de indentação! Quando uma indentação não é respeitada o interpretador acusará um erro.
+
+* Else
+
+Criaremos um script que verifica a senha de um usuário:
+~~~python
+>>> senha = input("Digite sua senha")
+>>> if senha == "123oliveira4":
+       print("Senha correta")
+~~~
+Muito bem, se for inserida a senha correta, obteremos a mensagem "Senha correta". Porém, caso
+a senha esteja errada, nenhuma mensagem é enviada.
+
+A cláusula __else__ é a alternativa que é executada caso o **if** seja avaliado como falso. Podemos
+agora avisar se a senha estiver incorreta.
+~~~python
+>>> senha = input("Digite sua senha")
+>>> if senha == "123oliveira4":
+       print("Senha correta")
+    else:
+       print("Senha incorreta")
+~~~
+
