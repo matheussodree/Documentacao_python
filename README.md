@@ -75,7 +75,7 @@ Uma variável em Python é um nome que aponta para um valor. A instrução de da
 
 * Nome das variáveis
 
-  Válido | Inválido | Por quê é inválido?
+  Válido | Inválido | Por que é inválido?
   -------|----------|--------------------
   minha_string | minha-string | Hifens não são permitidos
   int4 | 4int | Não pode começar com número
@@ -178,11 +178,32 @@ raio = 4
 pi = 3.14
 print("área do círculo "+str(pi*raio**2))
 
-""" Cálculo da área de um retângulo"""
+""" Cálculo da área de um retângulo """
 base = 2
 largura = 3
 print("área do retângulo "+str(base*largura))
 
 área do círculo 50.24
 área do retângulo 6
+~~~
+
+* Input
+
+E se você quisesse obter os dados do usuário? Nesse caso, você pode utilizar a função input.
+A referida função captura o dado do usuário e nos retorna esse valor em string
+~~~python
+entrada = input("Qual é o seu nome?")
+print('Seu nome é ', entrada)
+
+>>> Qual o seu nome?Matheus
+Seu nome é Matheus
+~~~
+
+* Função Len
+
+A função informa quantos elementos uma sequência tem quanto utilizada em uma __string__, nos 
+dizendo quantos caracteres a **string** contém, veja:
+~~~python
+>>> len('Hello')
+5
 ~~~
