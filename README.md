@@ -287,3 +287,39 @@ agora avisar se a senha estiver incorreta.
        print("Senha incorreta")
 ~~~
 
+### Operadores Booleanos
+
+* And
+
+O operador __and__ avalia se dois valores ou expressões são verdadeiras, se ambos forem, o resultado é verdadeiro, caso 
+contrário retorna o valor de falso. Em resumo, com o __and__ estamos perguntando: são ambas expressões verdadeiras?
+~~~python
+>>> 3==3 and 4>3
+True
+>>> True and True
+True
+>>> 2>10 and 5==5
+False
+>>> True and False
+False
+~~~
+
+* Or
+
+Já com o operador __or__, apenas um dos valores precisa ser verdadeiro. Estamos perguntando, algum dos valores é verdadeiro?
+~~~python
+>>> 2>10 or 5==5
+True
+>>> True or False
+True
+~~~
+
+* Not
+
+O operador __not__, simplesmente inverte o valor booleano
+~~~python
+>>> not True
+False
+>>> not False
+True
+~~~
