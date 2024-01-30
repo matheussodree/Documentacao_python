@@ -323,3 +323,82 @@ False
 >>> not False
 True
 ~~~
+
+### Expressões condicionais 2
+
+* Else if
+
+O **elif** nada mais é que um **else** seguido de um **if**. Por exemplo, vamos criar um
+sistema de classificação para um jogo:
+~~~python
+pontuacao = 75
+if pontuacao <= 50:
+   print("newba")
+elif 50 < pontuacao <=70:
+   print("mediano")
+elif 70 < pontuacao <=90:
+   print("óia ele")
+else:
+   print("O escolhido")
+~~~
+OBS: ao utilizar o **elif** apenas uma das opções é executada, mesmo que as outras também
+sejam condições válidas
+
+Por exemplo, se quiséssemos avaliar se uma pessoa atenderia aos requisitos para ir a uma montanha russa
+muito restrita, o **elif** não atenderia, pois ele apenas verifica se uma condição é válida, enquanto é necessário
+que as três sejam também conferidas
+~~~python
+idade = 19
+altura = 1.6
+ticket_valido = True
+
+if ticket_valido:
+   print("Seu ticket é válido")
+elif idade > 18:
+   print("Você é maior de idade")
+elif altura > 1.5:
+   print("Altura permitida")
+else:
+   print("Requisitos não atendidos")
+~~~
+Podemos aninhas 'ifs' como uma solução, ou seja, colocar um **if** dentro do outro. Ou poderíamos também utilizar o **and**
+~~~python
+idade = 19
+altura = 1.6
+ticket_valido = True
+
+if ticket_valido:
+   print("Seu ticket é válido")
+   if idade > 18 and altura > 1.5:
+       print("Entrada permitida")
+else:
+   print("Requisitos não atendidos")
+~~~
+
+* Utilizando valores no if
+
+O **if** avalia se o valor que o sucede é verdadeiro ou falso. Em Python não apenas expressões booleanas
+resultam em verdadeiro ou falso, outros valores do Python também são avaliados da mesma maneira. Por exemplo,
+o valor zero é avaliado em falso, os demais números em verdadeiro, uma **string** vazia é falsa, já uma com 
+texto é verdadeira. Para avaliar se um valor resulta em verdadeiro ou falso utiliza-se a função **bool**:
+~~~python
+>>> bool("Matheus")
+True
+>>> bool("")
+False
+>>> bool(1)
+True
+~~~
+
+A seguir, um exemplo que ilustra a utilização direta de valores no **if**:
+~~~python
+senha = input("Digite sua senha")
+
+if senha:
+   print("Senha válida")
+else:
+   print("A senha não pode estar em branco")
+~~~
+
+Observe que o **if** recebe o valor de uma **string** contida na variável "senha", se ela tiver o conteúdo
+o **if** é verdadeiro, caso esteja vazia é avaliado como falso
