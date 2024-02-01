@@ -402,3 +402,41 @@ else:
 
 Observe que o **if** recebe o valor de uma **string** contida na variável "senha", se ela tiver o conteúdo
 o **if** é verdadeiro, caso esteja vazia é avaliado como falso
+
+* Operador ternário
+
+O operador ternário é uma sintaxe para analisar expressão condicional de forma compacta em uma única linha:
+~~~python
+' se_verdadeiro if expressão else se_falso '
+
+>>> umidade = 60
+>>> "Úmido" if umidade >= 50 else "Seco"
+Úmido
+~~~
+
+### PROJETO - A MÁGICA BOLA 8
+
+Bola de adivinhação, contendo resultados aleatórios 
+~~~python
+import random
+
+# gera números aleatórios entre 0 e 5
+guess = random.randint(0, 5)
+input("Me faça uma pergunta: ")
+
+if guess == 0:
+   print("Sim, com certeza")
+elif guess == 1:
+   print("Parece bom")
+elif guess == 2:
+   print("Melhor não te dizer agora")
+elif guess == 3:
+   print("Não posso prever agora")
+elif guess == 4:
+   print("Não conte com isso")
+elif guess == 5:
+   print("Minhas fontes dizem não")
+~~~
+Para criar esse projeto precisamos gerar resultados aleatórios. 
+Para isso, usamos o módulo **random** para gerar números aleatórios, com o comando **import random**.
+Assim, usamos a função **randint**, que gera números inteiros aleatórios inteiros no intervalo especificado
