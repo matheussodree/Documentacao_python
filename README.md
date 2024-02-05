@@ -440,3 +440,26 @@ elif guess == 5:
 Para criar esse projeto precisamos gerar resultados aleatórios. 
 Para isso, usamos o módulo **random** para gerar números aleatórios, com o comando **import random**.
 Assim, usamos a função **randint**, que gera números inteiros aleatórios inteiros no intervalo especificado
+
+### Loops
+
+* While loop
+
+O **while** loop é muito semelhante à estrutura do **if**, com a diferença que enquanto a condição booleana for verdadeira
+o bloco interno continua sendo executado. Exemplo:
+~~~python
+>>> x = 0
+>>> while x < 10:
+        print(x)
+        x = x + 1
+0
+1
+2
+...
+9       
+~~~
+Iniciamos a variável __x__ com o valor de 0, e avaliamos se ela é menor que 10, como a condição é verdadeira o bloco interno é executado,
+atualizamos o valor de **x** adicionando uma unidade com o **x = x + 1**. Ao final do loop, retornamos ao **while** para conferir a expressão, enquanto ela for verdadeira o *loop* continua
+* Atribuição aumentada
+
+Poderíamos ter escrito x += 1, em vez de x = x + 1. Este recurso é chamado de atribuição aumentada.
