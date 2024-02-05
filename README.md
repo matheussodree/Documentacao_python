@@ -463,3 +463,18 @@ atualizamos o valor de **x** adicionando uma unidade com o **x = x + 1**. Ao fin
 * Atribuição aumentada
 
 Poderíamos ter escrito x += 1, em vez de x = x + 1. Este recurso é chamado de atribuição aumentada.
+
+* Loop infinito e break
+
+No exemplo anterior, se esquecermos de digitar **x = x + 1**, entraríamos por acidente em um loop infinito, porquanto a condição
+**x < 10** seria sempre verdadeira. Porém , muitas vezes queremos um loop infinito, e para sairmos dele em algum momento, utilizamos
+a instrução **break**, a qual pode ser usada sempre que quisermos interromper um *loop*:
+~~~python
+while = True
+    resposta = input("Qual a capital do Canadá?")
+    if resposta == "Ottawa"
+        print("Acertou!")
+        break
+    else:
+        print("Tente novamente")
+~~~
