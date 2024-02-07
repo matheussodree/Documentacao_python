@@ -478,3 +478,23 @@ while = True
     else:
         print("Tente novamente")
 ~~~
+
+* Continue
+
+O **continue** é utilizado para voltar ao início do loop, mesmo antes de chegar a última linha dele. O **continue** força a volta para o 
+início do loop
+~~~python
+while True:
+    username = input("username?")
+    if username != "neo":
+        print("Nunca nem vi")
+        continue
+    senha = input("Qual a sua senha?")
+    if senha == "1234":
+        print("Bem-vindo, {}".format(username))
+        print("Aceita um café")
+        break
+~~~
+Observe que é o __continue__ que volta ao início do loop enquanto não é digitado o usuário correto
+
+Nesse código utilizamos a {} na string do **print**, para demarcar em qual lugar entra o valor da variável __username__
