@@ -498,3 +498,19 @@ while True:
 Observe que é o __continue__ que volta ao início do loop enquanto não é digitado o usuário correto
 
 Nesse código utilizamos a {} na string do **print**, para demarcar em qual lugar entra o valor da variável __username__
+
+* Listas
+
+Com as listas pode-se armazenar uma coleção de dados. Para criar uma lista utiliza-se colchetes e separa-se os itens com vírgula. Cada item 
+é associado a um índice, a contagem deles começa pelo número 0 e por meio desses índices, podemos acessar os itens
+~~~python
+>>> planetas = ["Marte", "Vênus", "Urano"]
+>>> planetas[0]
+"Marte"
+>>> planetas[1]
+"Vênus"
+>>> planetas[2] = "Terra"
+>>> planetas
+["Marte", "Vênus", "Terra"]
+~~~
+Note que podemos substituir os valores existentes, como substituímos o valor de "Urano" para o valor "Terra"
