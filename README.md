@@ -514,3 +514,33 @@ Com as listas pode-se armazenar uma coleção de dados. Para criar uma lista uti
 ["Marte", "Vênus", "Terra"]
 ~~~
 Note que podemos substituir os valores existentes, como substituímos o valor de "Urano" para o valor "Terra"
+
+* For loops e Range
+
+O **for** é a estrutura de repetição mais popular do Python. Ela é muito conveniente para percorrer os objetos iteráveis, como as listas.
+Por padrão, a contagem se inicia do 0 e vai percorrendo os valores:
+~~~python
+>>> for i in range(6):
+     print(i)
+0
+1
+2
+3
+4
+5
+~~~
+O objeto **range** retorna uma sequência, na qual os valores são produzidos sob demanda, tornando-se mais eficiente, não sendo mais necessário 
+produzir toda a lista em memória. O **range** ainda aceita a definição de um valor inicial, um valor final e um valor passo. Por exemplo, para imprimir
+os números ímpares de 1 a 14, temos:
+~~~python
+>>> for x in range(1, 15, 2):
+    print(x)
+1
+3
+5
+7
+9
+11
+13 
+~~~
+PS: O valor de passo 2, faz um pulo de uma casa;
