@@ -10,7 +10,7 @@ Documentação dos estudos de python
   As sequências de instruções que criamos com fim de solucionar problemas são chamadas de algoritmo
 
 ### Início:
-* Hello world
+* **Hello world**
 
 ~~~python
 
@@ -19,20 +19,20 @@ print("Hello world")
 ~~~
 
 
-* Valores Inteiros, tipo _Int_
+* **Valores Inteiros, tipo _Int_**
 
 ~~~python
 >>> 2
 2
 ~~~
 
-* Valores flutuantes, tipo _float_
+* **Valores flutuantes, tipo _float_**
 ~~~python
 >>> 1.61
 1.61
 ~~~
 
-* Valores tipo _String_
+* **Valores tipo _String_**
 ~~~python
 >>> "Hello world"
 Hello world
@@ -40,7 +40,7 @@ Hello world
 Hello world
 ~~~
 
-* Valores Booleanos
+* **Valores Booleanos**
 ~~~python
 >>> True
 True
@@ -48,7 +48,7 @@ True
 False
 ~~~
 
-* Variáveis
+* **Variáveis**
 
 Uma variável em Python é um nome que aponta para um valor. A instrução de dar um valor
   à variável é chamada de atribuição.
@@ -73,7 +73,7 @@ Uma variável em Python é um nome que aponta para um valor. A instrução de da
   pois o Python difere maiúsculas de minúsculas, é CASE SENSITIVE, para o interpretador
   "distancia" e "Distancia" são duas variáveis diferentes.  
 
-* Nome das variáveis
+* **Nome das variáveis**
 
   Válido | Inválido | Por que é inválido?
   -------|----------|--------------------
@@ -94,7 +94,7 @@ continue   finally  is      return
 def        for      lambda  try
 ~~~
 
-* Operadores Aritméticos
+* **Operadores Aritméticos**
 
   Os operadores aritméticos básicos do Python são + , - , * , / e **
 sendo, respectivamente soma, subtração, multiplicação, divisão e exponenciação
@@ -123,7 +123,7 @@ Floor Division //, o qual remove o valor decimal da divisão:
 1
 ~~~
 
-* Operações com Strings
+* **Operações com Strings**
 
   Os operadores também podem ser usados com __strings__, ao somar duas __strings__
 temos como resultado a união delas, chamada de concatenação.
@@ -163,7 +163,7 @@ a função **int** e para um **float** a função **float**.
 5.5
 ~~~
 
-* Comentários
+* **Comentários**
 
 Os comentários são anotações inseridas no código para o próprio programador e são
 ignorados pelor interpretador. São importantes para explicar para si mesmo e para os
@@ -187,7 +187,7 @@ print("área do retângulo "+str(base*largura))
 área do retângulo 6
 ~~~
 
-* Input
+* **Input**
 
 E se você quisesse obter os dados do usuário? Nesse caso, você pode utilizar a função input.
 A referida função captura o dado do usuário e nos retorna esse valor em string
@@ -199,7 +199,7 @@ print('Seu nome é ', entrada)
 Seu nome é Matheus
 ~~~
 
-* Função Len
+* **Função Len**
 
 A função informa quantos elementos uma sequência tem quanto utilizada em uma __string__, nos 
 dizendo quantos caracteres a **string** contém, veja:
@@ -210,7 +210,7 @@ dizendo quantos caracteres a **string** contém, veja:
 
 ### Expressões condicionais
 
-* Expressões booleanas
+* **Expressões booleanas**
 
 Para realizar decisões é necessário que antes saibamos comparar valores. As espressões booleanas
 nos permitem fazer essa comparação e obter como resultado __True__ ou __False__
@@ -241,7 +241,7 @@ x < y | x menor que y
 x >= y | x maior ou igual a y
 x <= y | x menor ou igual a y
 
-* Intrução If
+* **Intrução If**
 
 O __if__ é a forma mais elementar de avaliação. 
 A expressão é avaliada pelo interpretador: se ela for verdadeira, 
@@ -258,7 +258,7 @@ Em português a instrução seria:
 Se Verdadeiro:
   Comandos
 ```
-* Indentação
+* **Indentação**
 
 O espaçamento à esquerda, logo abaixo da declaração __if__, não é apenas estético,
 o Python utiliza os espaçamentos para delimitar os blocos de código, ou seja, é esse
@@ -266,7 +266,7 @@ espaçamento que expresssa que o __print__ está dentro do __if__. Em Python por
 são utilizados quatro espaços para cada nível de bloco. Essa delimitação por espaços é chamada
 de indentação! Quando uma indentação não é respeitada o interpretador acusará um erro.
 
-* Else
+* **Else**
 
 Criaremos um script que verifica a senha de um usuário:
 ~~~python
@@ -289,7 +289,7 @@ agora avisar se a senha estiver incorreta.
 
 ### Operadores Booleanos
 
-* And
+* **And**
 
 O operador __and__ avalia se dois valores ou expressões são verdadeiras, se ambos forem, o resultado é verdadeiro, caso 
 contrário retorna o valor de falso. Em resumo, com o __and__ estamos perguntando: são ambas expressões verdadeiras?
@@ -304,7 +304,7 @@ False
 False
 ~~~
 
-* Or
+* **Or**
 
 Já com o operador __or__, apenas um dos valores precisa ser verdadeiro. Estamos perguntando, algum dos valores é verdadeiro?
 ~~~python
@@ -314,7 +314,7 @@ True
 True
 ~~~
 
-* Not
+* **Not**
 
 O operador __not__, simplesmente inverte o valor booleano
 ~~~python
@@ -326,7 +326,7 @@ True
 
 ### Expressões condicionais 2
 
-* Else if
+* **Else if**
 
 O **elif** nada mais é que um **else** seguido de um **if**. Por exemplo, vamos criar um
 sistema de classificação para um jogo:
@@ -375,7 +375,7 @@ else:
    print("Requisitos não atendidos")
 ~~~
 
-* Utilizando valores no if
+* **Utilizando valores no if**
 
 O **if** avalia se o valor que o sucede é verdadeiro ou falso. Em Python não apenas expressões booleanas
 resultam em verdadeiro ou falso, outros valores do Python também são avaliados da mesma maneira. Por exemplo,
@@ -403,7 +403,7 @@ else:
 Observe que o **if** recebe o valor de uma **string** contida na variável "senha", se ela tiver o conteúdo
 o **if** é verdadeiro, caso esteja vazia é avaliado como falso
 
-* Operador ternário
+* **Operador ternário**
 
 O operador ternário é uma sintaxe para analisar expressão condicional de forma compacta em uma única linha:
 ~~~python
@@ -443,7 +443,7 @@ Assim, usamos a função **randint**, que gera números inteiros aleatórios int
 
 ### Loops
 
-* While loop
+* **While loop**
 
 O **while** loop é muito semelhante à estrutura do **if**, com a diferença que enquanto a condição booleana for verdadeira
 o bloco interno continua sendo executado. Exemplo:
@@ -460,11 +460,11 @@ o bloco interno continua sendo executado. Exemplo:
 ~~~
 Iniciamos a variável __x__ com o valor de 0, e avaliamos se ela é menor que 10, como a condição é verdadeira o bloco interno é executado,
 atualizamos o valor de **x** adicionando uma unidade com o **x = x + 1**. Ao final do loop, retornamos ao **while** para conferir a expressão, enquanto ela for verdadeira o *loop* continua
-* Atribuição aumentada
+* **Atribuição aumentada**
 
 Poderíamos ter escrito x += 1, em vez de x = x + 1. Este recurso é chamado de atribuição aumentada.
 
-* Loop infinito e break
+* **Loop infinito e break**
 
 No exemplo anterior, se esquecermos de digitar **x = x + 1**, entraríamos por acidente em um loop infinito, porquanto a condição
 **x < 10** seria sempre verdadeira. Porém , muitas vezes queremos um loop infinito, e para sairmos dele em algum momento, utilizamos
@@ -479,7 +479,7 @@ while = True
         print("Tente novamente")
 ~~~
 
-* Continue
+* **Continue**
 
 O **continue** é utilizado para voltar ao início do loop, mesmo antes de chegar a última linha dele. O **continue** força a volta para o 
 início do loop
@@ -499,7 +499,7 @@ Observe que é o __continue__ que volta ao início do loop enquanto não é digi
 
 Nesse código utilizamos a {} na string do **print**, para demarcar em qual lugar entra o valor da variável __username__
 
-* Listas
+* **Listas**
 
 Com as listas pode-se armazenar uma coleção de dados. Para criar uma lista utiliza-se colchetes e separa-se os itens com vírgula. Cada item 
 é associado a um índice, a contagem deles começa pelo número 0 e por meio desses índices, podemos acessar os itens
@@ -515,7 +515,7 @@ Com as listas pode-se armazenar uma coleção de dados. Para criar uma lista uti
 ~~~
 Note que podemos substituir os valores existentes, como substituímos o valor de "Urano" para o valor "Terra"
 
-* For loops e Range
+* **For loops e Range**
 
 O **for** é a estrutura de repetição mais popular do Python. Ela é muito conveniente para percorrer os objetos iteráveis, como as listas.
 Por padrão, a contagem se inicia do 0 e vai percorrendo os valores:
@@ -544,3 +544,69 @@ os números ímpares de 1 a 14, temos:
 13 
 ~~~
 PS: O valor de passo 2, faz um pulo de uma casa;
+
+* **Enumerate**
+
+Utilizado para saber o índice de cada elemento.
+~~~sql
+>>> for i ,planeta in enunerate(planetas)
+        print(i, planeta)
+0 Mercúrio
+1 Vênus
+2 Terra
+...
+~~~
+
+* **Iteração de mais de uma lista**
+
+Há situações em que queremos percorrer duas listas simultaneamente. Com o __zip__ isso é possível, ele nos permite desempacotar as listas simultaneamente
+~~~python
+>>> musicas = ["Another brick in the wall", "Stairway to heaven", "We will rock you", "My generation"]
+>>> horarios = ["19:00", "19:45", "20:10", "20:30"]
+>>> for m , h in zip(musicas, horarios):
+        print(m,h)
+Another brick in the wall 19:00
+Stairway to heaven 19:45
+We will rock you 20:10
+My generation 20:30
+~~~
+
+* **Dicionários e for loops**
+
+Os dicionários são uma coleção associativa, ou mapeada. Essa associação conecta uma chave a um valor.
+~~~sql
+>>> meu_dicio = {"nome": "Matheus", "idade": 22 }
+>>> meu_dicio
+{"nome": "Matheus", "idade": 22 }
+>>> meu_dicio["nome"]
+'Matheus'
+>>> meu_dicio["idade"]
+22
+~~~
+Podemos também iterar dicionários:
+~~~sql
+>>> skills = {"speed": 8, "strenght": 99}
+>>> for k in skills:
+        print(k)
+speed
+strenght
+~~~
+Podemos utilizar o método __items__ para percorrer juntamente com os valores:
+~~~sql
+>>> for k, v in skills.items():
+        print(k, v)
+speed 8
+strenght 99
+~~~
+* **Else**
+
+Os _loops_ têm a opção da cláusula **else**, que só é executada se o loop executar sem interrupções
+~~~sql
+frutas = ['pera', 'uva', 'maçã']
+for fruta un frutas:
+    if fruta == 'abacaxi':
+        print("Encontrado")
+        break
+else:
+    print("não encontrada")
+~~~
